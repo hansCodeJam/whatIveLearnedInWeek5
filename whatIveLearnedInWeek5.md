@@ -45,7 +45,7 @@ function howLongIsMyString(str) {
   } else if (str.length === 10) {
     return "That's a regular sized string!"
   } else if (str.length < 10) {
-    return "That's a small string!"
+    return 'That\'s a small string!'
   }
 }
 
