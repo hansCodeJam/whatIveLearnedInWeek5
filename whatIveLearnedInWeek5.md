@@ -37,15 +37,18 @@ function bev(){
 
 - We practiced more on if-else statement with string.length
 ```Javascript
-function isItMedium(str) {
-    let length = str.length;
-    if(length ===  10) {
-        return 'That\'s a regular sized string!'
-    } else if (length === 20) {
-        return "That's a regular sized string!"
-    }
+function howLongIsMyString(str) {
+  if(str.length > 20) {
+    return "That's a long string!"
+  } else if (str.length === 20) {
+    return "That's a regular sized string!"
+  } else if (str.length === 10) {
+    return "That's a regular sized string!"
+  } else if (str.length < 10) {
+    return "That's a small string!"
+  }
 }
 
-console.log(itItMedium(15))
-//That's a regular sized string
+console.log(howLongIsMyString(9))
+//That's a small string
 ```
